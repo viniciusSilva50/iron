@@ -1,0 +1,11 @@
+version: '2.3'
+
+services:
+  database:
+    image: postgres:17.2-alpine
+    environment:
+      - POSTGRES_PASSWORD=make?Jurassic@3422!
+      - POSTGRES_USER=collect7711?More!
+      - POSTGRES_DB=ironstudios
+    ports:
+      - 5432:5432
