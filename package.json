@@ -1,12 +1,23 @@
 {
+  "name": "iron",
+  "private": true,
   "scripts": {
-    "dev": "turbo run dev"
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "turbo": "^2.4.1"
+    "prettier": "^3.5.0",
+    "turbo": "^2.4.1",
+    "typescript": "5.7.3"
   },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.8.2",
   "workspaces": [
-    "apps/*"
-  ],
-  "packageManager": "npm@8.11.0"
+    "apps/*",
+    "packages/*"
+  ]
 }
